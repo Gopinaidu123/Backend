@@ -7,7 +7,7 @@ function getUserSubjets(userRoll , getUserMarks ){
     getUserMarks({subid : "en-1"})
 }
 function getUserMarks(userSubid){
-    console.log("gettting the details of user Subid",userSubid);
+    console.log("gettting tefgrwwghe details of user Subid",userSubid);
 }
 getUseDetials("123" ,function(userRoll) {
     getUserSubjets(userRoll, function(userSubid){
