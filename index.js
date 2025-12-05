@@ -7,7 +7,7 @@ const server =http.createServer((req,res) => {
         res.end(JSON.stringify({name:"thub"}))
     } else{
         res.writeHead(200,{"content-Type" : "text/plain"});
-        res.end("Hello this is from Backend")
+        res.end("Hello this is from Backend aha")
     }
 
 });
