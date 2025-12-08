@@ -17,12 +17,24 @@
 
 import express from 'express';
 const app = express();
+
+ 
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    next();  
+});
+ 
+app.use(express.json());
+
 app.get("/users", (req, res) => {
     res.send("Hello from Express server");
-})
-app.get("/get-user", (req, res) => {
-    req.send("User data from Express server");
-})
+});
+
+ app.post("/data", (req, res) => {
+    console.log(req.body);
+    res.send("Data received");
+});
+
 app.listen(7007, () => {
     console.log("Express server running at port 7007");
 });

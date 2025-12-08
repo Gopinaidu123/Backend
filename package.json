@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/Gopinaidu123/Backend/issues"
   },
-  "homepage": "https://github.com/Gopinaidu123/Backend#readme"
+  "homepage": "https://github.com/Gopinaidu123/Backend#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
 }
-  
