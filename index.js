@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 app.get("/users", (req, res) => {
-    res.send("Hello due");
+    res.send("Hello bro");
 });
 
  app.post("/data", (req, res) => {
