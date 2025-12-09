@@ -33,7 +33,7 @@ app.get("/users", (req, res) => {
 
  app.post("/data", (req, res) => {
     console.log(req.body);
-    res.send("Data received");
+    res.send("Data is received");
 });
 
  
