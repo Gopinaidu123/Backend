@@ -28,13 +28,14 @@ app.use(express.json());
 app.use(express.json());
 
 app.get("/users", (req, res) => {
-    res.send("Hello bro");
+    res.send("Hello dude");
 });
 
  app.post("/data", (req, res) => {
     console.log(req.body);
     res.send("Data is received");
 });
+
 app.put("/update", ( req,res) =>{
     res.send("Data is updated");    
 });
