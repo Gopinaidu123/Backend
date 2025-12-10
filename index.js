@@ -16,7 +16,7 @@
 // });
 
 import express from 'express';
-import router from './Routers/studentsRouters.js';
+import studentsRouter from './Routers/studentsRouters.js';
 
 const app = express();
  
@@ -24,9 +24,7 @@ const app = express();
 
 app.use(express.json());
 
- 
- 
-app.use(express.json());
+app.use('/' , studentsRouter);
 
 app.get("/users", (req, res) => {
     res.send("Hello dude");
