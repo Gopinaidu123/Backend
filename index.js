@@ -17,7 +17,7 @@
 
 import express from 'express';
 const app = express();
-import studentRouter from './Routers/stuudentsRouters.js';
+ 
 
 
 app.use(express.json());

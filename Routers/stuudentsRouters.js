@@ -1,5 +1,5 @@
 import experss from "express";
-import { getStudents, addStudents } from "../../controller/studentsController.js";  
+import { getStudents, addStudents } from "../controllers/studentsController.js";  
 const router = experss.Router();
 
 router.get("/get-students", getStudents);
