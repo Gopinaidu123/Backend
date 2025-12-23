@@ -14,15 +14,32 @@
 // }
 // export { getStudents , addStudents};
 
+import student from "../models/models.js";
 const getStudents= (req,res) =>{
-    let stdData= 
-    {
-        "name" : "sobha",
-        "Roll" :"4235"
+    const mydata = {
+        name: "thub",
+        roll: "123432424636"
     };
-    res.status(200).json({data : stdData});
+    res.send(mydata);
+     
 };
-const addstudents=(req ,res) => {
-    res.status(201) .json ({message : "data added" });
+const addstudents=  async(req ,res) => {
+    try{
+        const data = req.body;
+        console.log(data);
+        const addeddata = await student.insertMany(data);
+        console.log(addeddata);
+    }
+    catch(error){
+        res.status(500).json({error: error.message})
+    }
 }
 export {getStudents , addstudents};
+
+
+
+ 
+
+ 
+ 
+    
