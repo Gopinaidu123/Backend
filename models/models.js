@@ -11,5 +11,5 @@ const addStud = new mongoose.Schema( {
         type : Number
     }
 });
-const student = mongoose.model("Student",studentSchema)
+const sir = mongoose.model("sir",studentSchema)
 export  default student;

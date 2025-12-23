@@ -18,5 +18,5 @@ app.get('/users', (req, res) => {
 })
 
 app.listen(7007, () => {
-    console.log("server running at port 7007")
+    console.log("server running at port 7007 uyiiii")
 });
